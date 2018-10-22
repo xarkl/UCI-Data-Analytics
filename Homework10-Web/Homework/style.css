@@ -1,0 +1,26 @@
+.header-content-inner{
+    text-align: center;
+    padding: 100px;
+    background-color: lightsteelblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 65px;
+}
+.about{
+    text-align: center;
+    padding: 150px;
+}
+.index-body{
+    background-color: lightslategray;
+}
+.summary-title{
+    padding: 20px;
+    color: steelblue;
+}
+.comparison-b{
+    margin-left: 20px
+}
+
