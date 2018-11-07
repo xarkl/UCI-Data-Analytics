@@ -19,3 +19,17 @@ data.forEach((tableRow) => {
 d3.event.preventDefault();
 
 //filter date search
+var queryDate = d3.select("#datetime").property("value")
+
+if (queryDate) {
+    filteredData = tableData.filter(row => row.datetime === date);
+
+    data.forEach((tableRow) => {
+        var row = tbody.append("tr");
+
+        Object.values(tableRow).forEach((value) => {
+            var cell = row.append("td");
+            cell.text(value);
+        })
+    })
+}
