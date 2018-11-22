@@ -61,23 +61,6 @@ d3.csv("assets/data/data.csv", function(error, phData) {
   var xValue = function(d) { return x(d.poverty);};
   var yValue = function(d) { return y(d.healthcare);};
 
-// var xValueline =d3.line()
-    //.x(function(d) { return x(d.poverty); }),
-
-//var yvalueline = d3.line()
-   // .y(function(d) { return y(d.healthcare); });
-
-  // var colorValue = function(d) { return d.abbr;},
-
-  // color = d3.schemeCategory10;
- 
-  //xScale = x
-      //.domain([d3.min(phData, xValue)-1, d3.max(phData, xValue)+1])
-       //.range([0,chartWidth]);
-  
-  //yScale = y
-      //.domain([d3.min(phData, yValue)-1, d3.max(phData, yValue)+1])
-      //.range([chartHeight,0]);
 
   function findMinAndMax(i) {
         xMin = d3.min(phData, function(d) {
